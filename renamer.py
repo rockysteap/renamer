@@ -52,6 +52,5 @@ if __name__ == '__main__':
                     revised_filename = (f'{filename_prefix}'
                                         f'{timestamp_string}'
                                         f'_{old_filename_wo_ext}{extension}')
-                    print(f'Renaming {os.path.join(path, filename)} to {revised_filename}')
-                    # os.rename(os.path.join(path, filename), os.path.join(path, revised_filename))
+                    os.rename(os.path.join(path, filename), os.path.join(path, revised_filename))
     os.system("echo 'Renaming process finished.'")
